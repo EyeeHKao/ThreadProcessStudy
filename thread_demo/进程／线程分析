@@ -1,0 +1,3 @@
+top -p [process_id] 单独查看某个进程的运行情况，如cpu占用，内存消耗等
+top -p -H [process_id]查看指定进程下各个子线程的运行情况
+在某个线程启动函数里面，通过pthread库中的pthread_setname_np(phtread_self(), "name")，来命名各个线程，这样结合top可以具体分析各个线程的运行情形
